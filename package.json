@@ -1,0 +1,41 @@
+{
+  "name": "carmed-recreation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "15.5.15",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@react-three/fiber": "^8.17.5",
+    "@react-three/drei": "^9.112.0",
+    "three": "^0.168.0",
+    "framer-motion": "^11.11.8",
+    "gsap": "^3.12.5",
+    "@studio-freight/lenis": "^1.0.42",
+    "lenis": "^1.1.14",
+    "lucide-react": "^0.446.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.168.0",
+    "typescript": "^5",
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "15.5.15",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}
