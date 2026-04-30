@@ -33,13 +33,22 @@ export default function CustomCursor() {
     window.addEventListener('mousemove', handleMouseMove);
 
     const interactives = document.querySelectorAll('a, button, [data-cursor-hover]');
+    const handlers: Array<{ el: Element; enter: () => void; leave: () => void }> = [];
+
     interactives.forEach((el) => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
+      const enter = () => { isHovering.current = true; };
+      const leave = () => { isHovering.current = false; };
+      el.addEventListener('mouseenter', enter);
+      el.addEventListener('mouseleave', leave);
+      handlers.push({ el, enter, leave });
     });
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      handlers.forEach(({ el, enter, leave }) => {
+        el.removeEventListener('mouseenter', enter);
+        el.removeEventListener('mouseleave', leave);
+      });
     };
   }, [cursorX, cursorY, followerX, followerY]);
 

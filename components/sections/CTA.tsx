@@ -87,7 +87,7 @@ export default function CTA() {
           </MagneticButton>
           <MagneticButton
             className="rounded-full border border-white/10 px-10 py-4 text-sm font-medium text-white/70 transition-all duration-300 hover:border-white/30 hover:text-white"
-            onClick={() => {}}
+            onClick={() => window.open('#work', '_self')}
           >
             View Case Studies
           </MagneticButton>

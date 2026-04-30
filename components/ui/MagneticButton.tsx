@@ -7,7 +7,6 @@ interface MagneticButtonProps {
   children: ReactNode;
   className?: string;
   onClick?: () => void;
-  href?: string;
   strength?: number;
 }
 

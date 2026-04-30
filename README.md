@@ -1,6 +1,6 @@
 # Recreate Studio
 
-A premium digital creative agency website built with Next.js 14, featuring dark theme, advanced animations, 3D particle effects, and a polished UI/UX.
+A premium digital creative agency website built with Next.js 15, featuring dark theme, advanced animations, 3D particle effects, and a polished UI/UX.
 
 ## ✨ Features
 
@@ -18,7 +18,7 @@ A premium digital creative agency website built with Next.js 14, featuring dark 
 
 | Category | Technology |
 |---|---|
-| Framework | Next.js 14 (App Router) + TypeScript |
+| Framework | Next.js 15 (App Router) + TypeScript |
 | Styling | Tailwind CSS + CSS custom properties |
 | Animations | Framer Motion + GSAP + ScrollTrigger |
 | 3D / WebGL | React Three Fiber + @react-three/drei |
